@@ -16,7 +16,7 @@ We made a clone of the New York Times page. The page works best on a 1366x768 re
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://railona.github.io/Design-Teardown-Heat-map/)
 
 👤 **Railon Acosta**
 
@@ -35,7 +35,7 @@ We made a clone of the New York Times page. The page works best on a 1366x768 re
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/RailonA/Design-Teardown-Heat-map/issues).
 
 ## Show your support
 
