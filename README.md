@@ -2,7 +2,7 @@
 
 # Design-Teardown-Heat-map
 
-We made a clone of the New York Times page. The page works best on a 1366x768 resolution and using the firefox browser, assets might look out of place using other browsers or resolutions. The page was build using grid, flex and float to align all of the elements properly.
+A grayscale heat map of the Smashing Magazine (http://smashingmagazine.com/) website that indicates which elements have the greatest weight in the visual hierarchy.
 
 
 
