@@ -279,7 +279,7 @@ html {
 .row5{
   display: grid;
   grid-column: 1/1;
-  background-color: red;
+  background-color:white;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px;
   grid-gap: 5px;
@@ -288,6 +288,14 @@ html {
   grid-area: row5;
 }
 
+.row5 > * {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.row5 h1 {
+  margin: 5em auto;
+}
 
 
 .row5-section1{
@@ -363,7 +371,7 @@ html {
 }
 /* ************** ROW 8 (Footer) *********************** */
 
-.row8{
+.footer{
   display: grid;
   grid-column: 1/1;
   background-color: red;
@@ -391,7 +399,7 @@ html {
     "row5"
     "row6"
     "row7"
-    "row8";
+    "footer";
   }
   .header{
     grid-template:
