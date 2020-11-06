@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+article, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -153,7 +153,7 @@ html {
   
   /* grid-area: row2-section1; */
 }
-.row2 h1{
+.row2 article{
 
   margin: 5em auto;
 }
@@ -206,7 +206,7 @@ html {
   border-radius: 4px;
 }
 
-.row3 h1 {
+.row3 article {
   margin: 5em auto;
 }
 
@@ -275,7 +275,7 @@ html {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 500px;
   align-items: center;
-  grid-area: row5;
+  grid-area: row4;
   grid-gap: 5px;
   justify-items: stretch;
   align-items: stretch;
@@ -313,7 +313,7 @@ html {
   border-radius: 4px;
 }
 
-.row5 h1 {
+.row5 article {
   margin: 5em auto;
 }
 
@@ -420,7 +420,7 @@ html {
   border-radius: 4px;
 }
 
-.row7 h1 {
+.row7 article {
   margin: 3em auto;
 }
 
@@ -481,7 +481,7 @@ html {
     align-items: stretch;
   }
 
-  .footer-section1 > h1 {
+  .footer-section1 > article {
     margin: 2em auto;
     text-align: center;
   }
@@ -517,7 +517,10 @@ html {
     justify-content: center;
     align-items: center;
   }
-
+  .footer article {
+    margin: 3em auto;
+  }
+  
   a {
     text-decoration: none;
     color: black;
