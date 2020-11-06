@@ -54,14 +54,14 @@ html {
   display: grid;
   grid-gap: 20px;
   grid-template-areas: 
-  "row1"
+  "header"
   "row2"
   "row3"
   "row4"
   "row5"
   "row6"
   "row7"
-  "row8";
+  "footer";
 } 
 
 
@@ -377,7 +377,7 @@ html {
   background-color: red;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px;
-  grid-area: row8;
+  grid-area: footer;
 }
 
 
