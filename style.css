@@ -425,17 +425,41 @@ html {
 /* ************** ROW 8 (Footer) *********************** */
 
 .footer{
-  display: grid;
-  grid-column: 1/1;
-  background-color: red;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 100px;
-  grid-area: footer;
-}
+    display: grid;
+    background-color: white;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-area: row7;
+  }
 
+  .footer-section1 {
+    justify-items: stretch;
+    align-items: stretch;
+  }
 
+  .footer-section1 > h1 {
+    margin: 2em auto;
+    text-align: center;
+  }
 
+  .footer-section2 {
+    justify-items: stretch;
+    align-items: stretch;
+  }
 
+  .topics {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: circle;
+    margin: 2em auto;
+  }
+
+  .footer > * {
+    background-color: lightgray;
+    border-radius: 4px;
+  }
 
 /* ************** Screen Responsiveness (@MEDIA)  *********************** */
 
