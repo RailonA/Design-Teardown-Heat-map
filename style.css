@@ -1,48 +1,110 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
+
+.wrapper {
+	background-color:red;
+	width:100%;
+	height:500px;
+  display: grid;
+  grid-gap: 20px;
+  /* grid-template-areas: 
+  "row1"
+  "row2"
+  "row3"
+  "row4"
+  "row5"
+  "row6"
+  "row7"
+  /* "row8"; */
+} 
+
+
+.row1{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+	grid-area: row1;
+	width:150px;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+.row1{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row1;
 }
-body {
-	line-height: 1;
+.row2{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row2;
 }
-ol, ul {
-	list-style: none;
+.row3{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row3;
 }
-blockquote, q {
-	quotes: none;
+.row4{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row4;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.row5{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row5;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.row6{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row6;
+}
+.row7{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row7;
+}
+.row8{
+  display: grid;
+  grid-column: 1/1;
+  background-color: red;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-area: row8;
+}
+
+
+/* @media(min-width:640px){
+  .wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template: 
+    "row1"
+    "row2"
+    "row3"
+    "row4"
+    "row5"
+    "row6"
+    "row7"
+    "row8";
+	} */
 }
