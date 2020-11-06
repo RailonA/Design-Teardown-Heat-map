@@ -431,7 +431,7 @@ html {
     grid-gap: 5px;
     justify-items: stretch;
     align-items: stretch;
-    grid-area: row7;
+    grid-area: footer;
   }
 
   .footer-section1 {
@@ -445,17 +445,15 @@ html {
   }
 
   .footer-section2 {
-    justify-items: stretch;
-    align-items: stretch;
-  }
-
-  .topics {
     display: flex;
-    justify-content: space-around;
-    list-style-type: circle;
-    margin: 2em auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-section2 a {
+    padding:10px;
   }
 
+ 
   .footer > * {
     background-color: lightgray;
     border-radius: 4px;
