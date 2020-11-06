@@ -51,6 +51,7 @@ html {
   margin: 1em;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 100px 100px 100px 100px;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 300px));
   display: grid;
   grid-gap: 20px;
   grid-template-areas: 
@@ -267,13 +268,32 @@ html {
 }
 /* ************** ROW 4 *********************** */
 
+
 .row4{
   display: grid;
-  background-color: red;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 100px;
-  grid-area: row4;
+  grid-column: 1/1;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 500px;
+  align-items: center;
+  grid-area: row5;
+  grid-gap: 5px;
+  justify-items: stretch;
+  align-items: stretch;
 }
+
+.row4 > * {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.row4-section1 {
+  grid-column: 2/3;
+  grid-row: 1/1;
+  place-self: stretch stretch;
+  text-align: center;
+  background-color: wheat;
+}
+
 /* ************** ROW 5 *********************** */
 
 .row5{
@@ -353,17 +373,39 @@ html {
 
 .row6{
   display: grid;
-  grid-column: 1/-1;
-  background-color: red;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 100px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px;
+  align-items: center;
   grid-area: row6;
+  grid-gap: 5px;
+  justify-items: stretch;
+  align-items: stretch;
 }
+
+.row6 > * {
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.row6-section1 {
+  grid-column: 1/2;
+  grid-row: 1/1;
+  place-self: stretch stretch;
+  text-align: center;
+}
+
+.row6-section2 {
+  grid-column: 2/3;
+  place-self: stretch stretch;
+  text-align: center;
+}
+
+
+
 /* ************** ROW 7 *********************** */
 
 .row7{
   display: grid;
-  grid-column: 1/1;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
@@ -458,6 +500,35 @@ html {
     background-color: lightgray;
     border-radius: 4px;
   }
+
+  .footer-section3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .footer-section3-2 {
+    grid-column: 1/2;
+  }
+
+  .footer-section3-3 {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    /* font-size: 12px; */
+  }
+
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
 
 /* ************** Screen Responsiveness (@MEDIA)  *********************** */
 
