@@ -161,10 +161,20 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
-.row2 span{
-  padding:20%;
+.span{
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2em;
+  border-radius: 10px;
+  color:white;
+
+  /* width: 15% 15%; */
 }
+
 .row2-section1{
   grid-column: 1/2;
   grid-row: 1/2;
@@ -205,7 +215,7 @@ a:hover {
 .row3{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40em 45em 45em 3em;
+  grid-template-rows: 40em 45em 45em 2em;
   grid-gap: 5px;
   padding:5px;
   grid-area: row3;
@@ -222,9 +232,7 @@ a:hover {
   font-size: 2em;
 }
 
-.row3 span{
-  padding:20%;
-}
+
 
 .row3-section1 {
   grid-column: 1/2;
@@ -292,6 +300,10 @@ a:hover {
   background-color: #E9ECEF;
 }
 
+.row3-section13 .span{
+padding: 5px;
+}
+
 
 /*************** ROW 4 *********************** */
 
@@ -314,8 +326,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-color:white;
-font-size: 2em;
+  color: white;
+  font-size: 2em;
 }
 
 .row4-section1 {
@@ -391,6 +403,9 @@ font-size: 2em;
   grid-column: 1/-1;
   grid-row: 5/6;
   background-color: #DEE2E6;
+}
+.row5-section9 .span{
+  padding:10px;
 }
 
 
@@ -479,13 +494,14 @@ font-size: 2em;
 }
 
 .row7-section5{
-  grid-column: 2/3;
+  grid-column: 1/4;
   grid-row: 3/4;
   background-color: #DEE2E6;
-
 }
-
-
+.row7-section5 .span{
+  padding:10px;
+    
+}
 
 
 
@@ -508,11 +524,15 @@ font-size: 2em;
 
   .footer-section1 {
     background-color: #495057;
+    padding:10px;
   }
-
+  .footer-section1 .span {
+    padding:1em;
+  }
   .footer-section2 {
     background-color: #343A40;
   }
+ 
   .footer-section2 a {
     padding:10px;
   }
@@ -524,9 +544,8 @@ font-size: 2em;
     align-items: center;
     justify-content: center;
     color:white;
-    font-size: 1em;
-    font-weight: bold;
-    
+    font-size: .9em;
+    font-weight: bold;    
   }
 
   .footer-section3 {
@@ -545,8 +564,12 @@ font-size: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .4em;
+    margin:.2em;
   }
-  
+  .footer-section3-3 .span {
+    padding: 1em;
+  }
   
   
 
