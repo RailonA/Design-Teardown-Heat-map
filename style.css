@@ -498,7 +498,6 @@ font-size: 2em;
     background-color: white;
     grid-template-rows: 5em 10em 5em;
     grid-gap: 5px;
-  
     grid-area: footer;
   }
 
@@ -508,7 +507,6 @@ font-size: 2em;
   }
 
   .footer-section1 {
- 
     background-color: #495057;
   }
 
@@ -528,6 +526,7 @@ font-size: 2em;
     color:white;
     font-size: 1em;
     font-weight: bold;
+    
   }
 
   .footer-section3 {
@@ -544,7 +543,7 @@ font-size: 2em;
   .footer-section3-3 {
     grid-column: 2/3;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   
