@@ -142,8 +142,6 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10em 10em;
   grid-area: row2;
-  justify-items: stretch;
-  align-items: stretch;
   grid-gap:5px;
   /* grid-area: 
   "row2-section1"
@@ -151,6 +149,14 @@ html {
   "row2-section3"
   "row2-section4" */
   /* "row2-section5"; */
+}
+.row2 > * {
+  background-color: lightgray;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
 }
 
 .row2 > div {
@@ -164,12 +170,6 @@ html {
   
   /* grid-area: row2-section1; */
 }
-.row2 article{
-
-  margin: 5em auto;
-}
-
-
 
 .row2-section2{
   grid-column: 2/3;
@@ -203,23 +203,21 @@ html {
 
 .row3{
   display: grid;
-  /* background-color: red; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px;
   grid-gap: 5px;
   grid-area: row3;
-  justify-items: stretch;
-  align-items: stretch;
 }
 
 .row3 > * {
   background-color: lightgray;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
 }
 
-.row3 article {
-  margin: 5em auto;
-}
 
 .row3-section1 {
   grid-column: 1/2;
@@ -284,8 +282,6 @@ html {
 .row3-section13 {
   grid-column: 1/-1;
   grid-row: 4/5;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #E9ECEF;
 }
 /*************** ROW 4 *********************** */
@@ -296,24 +292,22 @@ html {
   grid-column: 1/1;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 500px;
-  align-items: center;
   grid-area: row4;
   grid-gap: 5px;
-  justify-items: stretch;
-  align-items: stretch;
   background-color: #6C757D;
 }
 
 .row4 > * {
   background-color: #343A40;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .row4-section1 {
   grid-column: 2/3;
   grid-row: 1/1;
-  place-self: stretch stretch;
-  text-align: center;
 }
 
 /* ************** ROW 5 *********************** */
@@ -325,81 +319,61 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px;
   grid-gap: 5px;
-  justify-items: stretch;
-  align-items: stretch;
   grid-area: row5;
 }
 
 .row5 > * {
   background-color: lightgray;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.row5 article {
-  margin: 5em auto;
-}
-
 
 .row5-section1{
   grid-column:1/-1;
   grid-row: 1/2;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #6C757D;
 }
 
 .row5-section3{
   grid-column: 1/2;
   grid-row: 2/3;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #ADB5BD;
 
 }
 .row5-section4{
   grid-column: 2/3;
   grid-row: 2/3;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #ADB5BD;
 
 }
 .row5-section5{
   grid-column: 1/2;
   grid-row: 3/4;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #ADB5BD;
 
 }
 .row5-section6{
   grid-column: 2/3;
   grid-row: 3/4;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #ADB5BD;
 
 }
 .row5-section7{
   grid-column: 1/2;
   grid-row: 4/5;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #ADB5BD;
 
 }
 .row5-section8{
   grid-column: 2/3;
   grid-row: 4/5;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #ADB5BD;
 }
 .row5-section9{
   grid-column: 1/-1;
   grid-row: 4/5;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #DEE2E6;
 }
 
@@ -410,30 +384,26 @@ html {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 100px;
-  align-items: center;
   grid-area: row6;
   grid-gap: 5px;
-  justify-items: stretch;
-  align-items: stretch;
 }
 
 .row6 > * {
   background-color: lightgray;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .row6-section1 {
   grid-column: 1/2;
   grid-row: 1/1;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #343A40;
 }
 
 .row6-section2 {
   grid-column: 2/3;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #6C757D;
 }
 
@@ -447,32 +417,28 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
   grid-gap: 5px;
-  justify-items: stretch;
-  align-items: stretch;
   grid-area: row7;
 }
 
 .row7 > * {
   background-color: lightgray;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
 }
 
-.row7 article {
-  margin: 3em auto;
-}
+
 
 .row7-section1{
   grid-column: 1/2;
   grid-row: 1/2;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #6C757D;
 }
 .row7-section2{
   grid-column: 2/3;
   grid-row: 1/2;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #6C757D;
 
 }
@@ -480,8 +446,6 @@ html {
 .row7-section3{
   grid-column: 3/4;
   grid-row: 1/2;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #6C757D;
 
 }
@@ -489,8 +453,6 @@ html {
 .row7-section4{
   grid-column: 2/3;
   grid-row: 2/3;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #6C757D;
 
 }
@@ -498,8 +460,6 @@ html {
 .row7-section5{
   grid-column: 2/3;
   grid-row: 3/4;
-  place-self: stretch stretch;
-  text-align: center;
   background-color: #DEE2E6;
 
 }
@@ -528,15 +488,7 @@ html {
     background-color: #495057;
   }
 
-  .footer-section1 > article {
-    margin: 2em auto;
-    text-align: center;
-  }
-
   .footer-section2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #343A40;
   }
   .footer-section2 a {
@@ -546,6 +498,9 @@ html {
  
   .footer > * {
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer-section3 {
@@ -565,14 +520,11 @@ html {
     justify-content: center;
     align-items: center;
   }
-  .footer article {
-    margin: 3em auto;
-  }
+  
   
   a {
     text-decoration: none;
     color: black;
-    /* font-size: 12px; */
   }
 
   a:hover {
