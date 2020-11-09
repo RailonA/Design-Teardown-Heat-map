@@ -282,7 +282,6 @@ a:hover {
 .row2-section5 {
   position: absolute;
   display: flex;
-  justify-items: space-around;
   width: 6em;
   height: 1em;
   padding: 0.7em;
