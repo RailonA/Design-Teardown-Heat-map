@@ -282,14 +282,14 @@ a:hover {
 .row2-section5 {
   position: absolute;
   display: flex;
+  justify-items: space-around;
   width: 6em;
   height: 1em;
   padding: 0.7em;
-  justify-self: center;
-  margin-top: 0.7em;
+  margin: 0.7em 12em;   
 }
 
-.row2-section5 span {
+.row2-section5 article {
   width: 50%;
   height: 1.5em;
   padding: 1em;
