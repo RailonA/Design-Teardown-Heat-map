@@ -170,9 +170,10 @@ a:hover {
     "footer";
 }
 
-.wrapper > *{
-  width:1440px;
+.wrapper > * {
+  width: 1440px;
 }
+
 .header {
   display: grid;
   grid-column: 1/1;
@@ -390,8 +391,6 @@ a:hover {
   background-color: #e9ecef;
 }
 
-
-
 /*************** ROW 4 *********************** */
 
 .row4 {
@@ -432,6 +431,7 @@ a:hover {
   grid-gap: 5px;
   grid-area: row5;
 }
+
 .row5 > * {
   background-color: lightgray;
   border-radius: 4px;
