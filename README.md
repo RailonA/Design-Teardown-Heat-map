@@ -6,7 +6,7 @@ A grayscale heat map of the Smashing Magazine (http://smashingmagazine.com/) web
 
 
 
-![screenshot](./asset/)
+![screenshot](./asset/project-screenshot.png)
  
 ## Built With
 
