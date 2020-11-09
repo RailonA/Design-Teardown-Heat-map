@@ -156,8 +156,6 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 300px));
   display: grid;
-
-  /* grid-gap: 20px; */
   grid-template-areas:
     "header"
     "row2"
@@ -182,14 +180,6 @@ a:hover {
   font-size: larger;
   font-weight: bold;
   letter-spacing: 0.09em;
-
-  /* grid-template:
-  "header-section1"
-  "header-section2"
-  "header-section3"
-  "header-section4"
-  "header-section5"
-  "header-section6"; */
 }
 
 /* ************** ROW 1 (HEADER)*********************** */
@@ -200,40 +190,30 @@ a:hover {
   padding: 20px;
   width: 40%;
   text-align: center;
-
-  /* grid-area: header-section1; */
 }
 
 .header-section2 {
   grid-column: 2/3;
   background-color: #212529;
   padding: 20px;
-
-  /* grid-area: header-section2; */
 }
 
 .header-section3 {
   grid-column: 3/4;
   background-color: #212529;
   padding: 20px;
-
-  /* grid-area: header-section3; */
 }
 
 .header-section4 {
   grid-column: 4/5;
   background-color: #212529;
   padding: 20px;
-
-  /* grid-area: header-section4; */
 }
 
 .header-section5 {
   grid-column: 5/6;
   background-color: #212529;
   padding: 20px;
-
-  /* grid-area: header-section5; */
 }
 
 .header-section6 {
@@ -242,11 +222,10 @@ a:hover {
   width: 60%;
   padding: 20px;
   text-align: center;
-
-  /* grid-area: header-section6; */
 }
 
 /* ************** ROW 2 *********************** */
+
 .row2 {
   display: grid;
   grid-column: 1/1;
@@ -256,14 +235,6 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 14em 13em;
   grid-area: row2;
-
-  /* grid-area:
-  "row2-section1"
-  "row2-section2"
-  "row2-section3"
-  "row2-section4" */
-
-  /* "row2-section5"; */
 }
 
 .row2 > * {
@@ -288,32 +259,24 @@ a:hover {
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: #6c757d;
-
-  /* grid-area: row2-section1; */
 }
 
 .row2-section2 {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: #495057;
-
-  /* grid-area: row2-section2; */
 }
 
 .row2-section3 {
   grid-column: 1/2;
   grid-row: 2/3;
   background-color: #495057;
-
-  /* grid-area: row2-section3; */
 }
 
 .row2-section4 {
   grid-column: 2/3;
   grid-row: 2/3;
   background-color: #6c757d;
-
-  /* grid-area: row2-section4; */
 }
 
 .row2-section5 {
@@ -332,10 +295,6 @@ a:hover {
   padding: 1em;
   font-size: 0.4em;
 }
-
-
-
-
 
 /* ************** ROW 3 *********************** */
 
@@ -429,11 +388,6 @@ a:hover {
 .row3-section13 .span {
   padding: 0.5em;
 }
-
-/* .row3-section13 .span {
-  padding: 5px;
-} */
-
 
 /*************** ROW 4 *********************** */
 
@@ -539,7 +493,6 @@ a:hover {
   padding: 10px;
 }
 
-
 /* ************** ROW 6 *********************** */
 
 .row6 {
@@ -574,8 +527,6 @@ a:hover {
   background-color: #6c757d;
 }
 
-
-
 /* ************** ROW 7 *********************** */
 
 .row7 {
@@ -586,8 +537,6 @@ a:hover {
   grid-gap: 5px;
   grid-area: row7;
   width: 100%;
-
-  /* padding: 5px; */
 }
 
 .row7 > * {
@@ -635,10 +584,6 @@ a:hover {
 .row7-section5 .span {
   padding: 0.5em;
 }
-
-
-
-
 
 /* ************** ROW 8 (Footer) *********************** */
 
@@ -704,16 +649,11 @@ a:hover {
   width: 10em;
 }
 
-
-
-
 /* ************** Screen Responsiveness (@MEDIA)  *********************** */
 
 @media (min-width: 640px) {
   .wrapper {
     display: grid;
-
-    /* grid-gap: 20px; */
     grid-template:
       "row1"
       "row2"
@@ -725,9 +665,4 @@ a:hover {
       "footer";
   }
 
-  /* .header{
-    grid-template:
-    "header-section1 header-section2 header-section3 header-section4 header-section5 header-section6" ;
-  }
-  */
 }
