@@ -24,7 +24,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  width:1440px;
+  margin:auto;
 }
 ol, ul {
 	list-style: none;
@@ -147,7 +149,7 @@ a:hover {
   font-weight: bold;
   font-size: 3em;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 13em 13em;
+  grid-template-rows: 14em 13em;
   grid-area: row2;
   /* grid-area: 
   "row2-section1"
@@ -202,9 +204,22 @@ a:hover {
   
   
 }
-/* .row2-section5{
-  grid-area: row2-section5;
-} */
+.row2-section5 {
+  position: absolute;
+  display: flex;
+  width:6em;
+  height:1em;
+  padding:.7em;
+  justify-self: center;
+  margin-top: .7em;
+}
+.row2-section5 span{
+  position: sticky;
+  width:10em;
+  height:.1.5em;
+  padding:1em;
+  font-size: .4em;
+}
 
 
 
@@ -298,6 +313,10 @@ a:hover {
   grid-column: 1/-1;
   grid-row: 4/5;
   background-color: #E9ECEF;
+  padding:2em;
+}
+.row3-section13 .span {
+  padding:1em;
 }
 
 .row3-section13 .span{
@@ -416,10 +435,11 @@ padding: 5px;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 10em;
   grid-area: row6;
-  padding:5px;
-  font-weight: bold;
-  font-size: 2em;
   color:white;
+margin:0;
+width:1440px;
+
+
 }
 
 .row6 > * {
@@ -428,6 +448,8 @@ padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .row6-section1 {
@@ -449,9 +471,11 @@ padding: 5px;
   display: grid;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30em 40em 4em;
+  grid-template-rows: 30em 40em 5em;
   grid-gap: 5px;
   grid-area: row7;
+  width:1440px;
+  padding: 5px;
 }
 
 .row7 > * {
@@ -460,8 +484,8 @@ padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:10px;
   font-weight: bold;
+  padding:2em;
   font-size: 2em;
 }
 
@@ -497,9 +521,10 @@ padding: 5px;
   grid-column: 1/4;
   grid-row: 3/4;
   background-color: #DEE2E6;
+  padding:.8em;
 }
 .row7-section5 .span{
-  padding:10px;
+  padding:.5em;
     
 }
 
@@ -569,6 +594,8 @@ padding: 5px;
   }
   .footer-section3-3 .span {
     padding: 1em;
+    margin: .2em;
+    width: 10em;
   }
   
   
