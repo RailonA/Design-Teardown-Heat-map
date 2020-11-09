@@ -157,7 +157,6 @@ a:hover {
 }
 
 .wrapper {
-  width: 100%;
   margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 300px));
@@ -173,10 +172,12 @@ a:hover {
     "footer";
 }
 
+.wrapper > *{
+  width:1440px;
+}
 .header {
   display: grid;
   grid-column: 1/1;
-  width: 100%;
   background-color: #343a40;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
   grid-area: row1;
@@ -306,10 +307,10 @@ a:hover {
 
 .row3 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1440px;
+  grid-template-columns: repeat(4, 356.5px);
   grid-template-rows: 40em 45em 45em 6em;
   grid-gap: 5px;
-  padding: 5px;
   grid-area: row3;
 }
 
@@ -319,9 +320,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 7px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 .row3-section1 {
@@ -334,6 +335,7 @@ a:hover {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: #ced4da;
+  padding: 10px;
 }
 
 .row3-section3 {
@@ -388,12 +390,9 @@ a:hover {
   grid-column: 1/-1;
   grid-row: 4/5;
   background-color: #e9ecef;
-  padding: 1.5em;
 }
 
-.row3-section13 .span {
-  padding: 0.5em;
-}
+
 
 /*************** ROW 4 *********************** */
 
@@ -434,9 +433,7 @@ a:hover {
   grid-template-rows: 30em 30em 30em 30em 5em;
   grid-gap: 5px;
   grid-area: row5;
-  gap: 5px;
 }
-
 .row5 > * {
   background-color: lightgray;
   border-radius: 4px;
