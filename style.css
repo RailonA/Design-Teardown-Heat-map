@@ -28,6 +28,9 @@ body {
   width:1440px;
   margin:auto;
 }
+body > * {
+  box-sizing: border-box;
+}
 ol, ul {
 	list-style: none;
 }
@@ -173,8 +176,6 @@ a:hover {
   padding:2em;
   border-radius: 10px;
   color:white;
-
-  /* width: 15% 15%; */
 }
 
 .row2-section1{
@@ -214,8 +215,7 @@ a:hover {
   margin-top: .7em;
 }
 .row2-section5 span{
-  position: sticky;
-  width:10em;
+  width:50%;
   height:.1.5em;
   padding:1em;
   font-size: .4em;
@@ -436,10 +436,8 @@ padding: 5px;
   grid-template-rows: 10em;
   grid-area: row6;
   color:white;
-margin:0;
-width:1440px;
-
-
+  margin:0;
+  width:100%;
 }
 
 .row6 > * {
